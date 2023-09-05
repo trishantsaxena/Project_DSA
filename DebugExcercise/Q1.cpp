@@ -25,5 +25,5 @@ int main() {
 }
 
 /*
-    Successfully Debug, replace the || with &&.
+    Successfully Debug, replace the || with &&. 
 */
