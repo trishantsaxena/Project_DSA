@@ -13,7 +13,7 @@ int main(){
     int n;
     cin>>n;
     int i=1;
-    while(i<n){
+    while(i<=n){
         int j = i,count = 2*n+1,gaps=(n-i-1),k=1;
         while(k<gaps){
             cout<<" ";
@@ -33,3 +33,8 @@ int main(){
         i = i + 1;
     }
 }
+
+/*
+   Changes made
+   - i<=n
+*/
