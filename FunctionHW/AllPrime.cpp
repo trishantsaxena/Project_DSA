@@ -3,7 +3,7 @@ void printAllPrime(int range){
     bool flag = true;
     for (int  i = 2; i <= range; i++)
     {   bool flag = true;
-        for (int j = 2; j < i; j++)
+        for (int j = 2; j*j <= i; j++)
         {
             if (i%j==0)
             {
@@ -22,7 +22,7 @@ void printAllPrime(int range){
 }
 bool checkPrime(int num){
     bool flag = true;
-    for(int i = 2 ; i < num ; i++){
+    for(int i = 2 ; i*i <= num ; i++){
         if (num%i==0)
         {
             flag = false;
@@ -35,7 +35,7 @@ bool checkPrime(int num){
     return(flag);
 }
 void printPrimeFactor(int number){
-    for (int  i = 1; i <= number; i++)
+    for (int  i = 1; i*i <= number; i++)
     {
         if(number%i==0){
             std::cout<<i<<"  ";
