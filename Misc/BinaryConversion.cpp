@@ -48,15 +48,15 @@ int main(){
     do
     {
           system("cls");
-    std::cout<<"\nEnter a decimal number:\t";
-    std::cin>>number;
-    std::cout<<std::endl<<"\nBinary Conversion By Division Method  :\t"<<convertDecimal(number);
-    std::cout<<"\nBinary Coversion By Bitwise Method: \t"<<bitwiseANDdecimal(number);
-    std::cout<<"\n\nDo you want to enter another decimal? (y/n) : \t";
-    std::cin>>ch;
+        std::cout<<"\nEnter a decimal number:\t";
+        std::cin>>number;
+        std::cout<<std::endl<<"\nBinary Conversion By Division Method  :\t"<<convertDecimal(number);
+        std::cout<<"\nBinary Coversion By Bitwise Method: \t"<<bitwiseANDdecimal(number);
+        std::cout<<"\n\nDo you want to enter another decimal? (y/n) : \t";
+        std::cin>>ch;
     } while (ch=='y'||ch=='Y'); 
-    system("cls");
-    std::cout<<"Thanks for running program, Have a good Day!!!\n\n";
+        system("cls");
+        std::cout<<"Thanks for running program, Have a good Day!!!\n\n";
     
   
     return 0;
