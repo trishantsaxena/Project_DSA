@@ -38,7 +38,6 @@ void printOutput(std::vector<int> &ans,int size){
 }
 int main(){
     int size;
-
     std::cout<<"Enter size:\t";
     std::cin>>size;
     std::vector<int> vec(size);

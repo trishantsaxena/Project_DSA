@@ -12,10 +12,7 @@ int findMissing(std::vector<int> &nums,int size){
         ans = ans ^ i;
 
     }
-
     return(ans);
-    
-    
 }
 int main(){
     int size;

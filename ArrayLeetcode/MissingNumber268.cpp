@@ -16,7 +16,7 @@ void getSize(int &size){
     std::cout<<"\nEnter size: \t";
     std::cin>>size;
 }
-void takeInput(std::vector<int> &vec, int size){
+void takeInput(std::vector<int> &vec, int size){ // Solved By total sum approach , best would to solve with ^(XOR)
     std::cout<<"\nEnter Elements: \t";
     for (int  index = 0; index < size; index++)
     {
