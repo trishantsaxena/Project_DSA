@@ -39,5 +39,5 @@ int main(){
     int range;
     getRange(range);
     printTribonacci(range);
-    return(0);
+    return(0);  
 }

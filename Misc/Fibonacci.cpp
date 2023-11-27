@@ -8,6 +8,8 @@ void printFibonacci(int &R){
     int s = 1;
     //std::cout<<f<<" "<<s<<" ";
     int n=0;
+
+    if(n)
     for (int  i = 1; i < R; i++)
     {
         n = f+s;

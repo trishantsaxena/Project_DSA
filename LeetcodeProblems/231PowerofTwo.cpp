@@ -16,6 +16,7 @@
     Input: n = 3
     Output: false
  */
+// Correct answer is in Misc Power of 2. This is not a good method to solve this problem.
 #include<iostream>
 #include<cmath>
 void getNum(int &N){

@@ -7,6 +7,10 @@ abc(){
     x = 0;
     y = new int(0);
 }
+abc(int _x, int _y){
+    x = _x;
+    y = _y;
+}
 
 int getX() const{
     /* x = 90; // Not valid , as we have declare the function as constant. */
@@ -27,9 +31,13 @@ void setY(int _val){
     *y = _val;
 }
 
+void printABC(const abc &a){
+    std::cout<<a.getX()<<" "<<a.getY();
+}
+
 };
 int main(){
-    abc a;
+    abc a(1,2);
     int x,y;
     std::cout<<"\nEnter X & Y\t";
     std::cin>>x>>y;

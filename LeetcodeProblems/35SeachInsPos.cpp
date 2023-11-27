@@ -36,15 +36,26 @@ void getElements(std::vector<int> &vec, int &size){
     
 }
 int SeachInsertPosition(std::vector<int> &nums, int &size, int target){    
-    int i = 0;
-    int j = size-1;
-    if (i == j)return(i+1);
+    int start = 0;
+    int end = size-1;
+    if (start == end)return(start+1);
 
-    
-    while (i<j)
+     
+    while (start < end)
     {
-        int mid = i + (j-1)/2;
-
+        int mid = start + (end-start)/2;
+        if(nums[mid] == target){
+            return(mid);
+        }
+        else if (nums[mid] < target)
+        {
+            start = mid+ 1;
+        }
+        else{
+            end = mid -1;                              
+        }
+        
+        
     }
     
 }
