@@ -4,21 +4,18 @@ void getRange(int &R){
     std::cout<<"\nEnter Range:\t";
     std::cin>>R;
 }
-void printGFseries(int &r){
-    if (r == 0)
-    {
-        std::cout<<r<<" ";
-    }
-    if(r == 1){
-        std::cout<<r<<" ";
-    }
-    std::cout<<r<<" ";
-    printGFseries(std::)
+int printGFseries(int r){
+ if (r == 1 || r== 2)
+ {
+    return(r-1);
+ }
     
+    long recAns = (long)pow(printGFseries(r-2),2)-printGFseries(r-1);
+    return(recAns);
 }
 int main(){
     int range;
     getRange(range);
-    printGFseries(range);
+    std::cout<<"\n"<<printGFseries(range);
     return(0);
 }

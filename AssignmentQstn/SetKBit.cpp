@@ -37,6 +37,7 @@ int main(){
     int num,k;
     getNum(num);
     getK(k);
+    
     std::cout<<"\n"<<setKBit(num,k);
     return(0);
-}
+} 

@@ -60,6 +60,6 @@ int main(){
     int start = 0, end = size-1;
     QuickSort(arr, start, end);
     printOutput(arr,size);
-    delete[] arr;
+    delete[] arr;   
     return(0);
 }

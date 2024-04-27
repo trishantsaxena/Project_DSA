@@ -12,7 +12,7 @@ int main(){
 
     std::cout<<"\nptr1\t"<<sizeof(ptr1);
     std::cout<<"\nptr2\t"<<sizeof(ptr2);
-    std::cout<<"\nptr3\t"<<sizeof(ptr3);
+    std::cout<<"\nptr3\t++++++++++"<<sizeof(ptr3);
 
     return(0);
 }
